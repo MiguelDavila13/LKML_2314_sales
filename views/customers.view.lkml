@@ -4,6 +4,20 @@ view: customers {
   dimension: custmer_name {
     type: string
     sql: ${TABLE}.custmer_name ;;
+    label: "names"
+  }
+
+  dimension: test {
+    case: {
+      when: {
+        sql: 1 ;;
+        label: "testing declaring"
+      }
+      when: {
+        sql: 2 ;;
+        label: "asfdasdfasf"
+      }
+    }
   }
   dimension: customer_code {
     type: string

@@ -10,7 +10,13 @@ datagroup: thelook_migueld_mtr_sales_default_datagroup {
 
 persist_with: thelook_migueld_mtr_sales_default_datagroup
 
-explore: customers {}
+explore: customers {
+  always_filter:  {
+    filters:{
+      field: customers.test
+    }
+  }
+}
 
 explore: date {}
 
@@ -19,4 +25,3 @@ explore: markets {}
 explore: products {}
 
 explore: transactions {}
-
