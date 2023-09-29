@@ -25,3 +25,5 @@ explore: markets {}
 explore: products {}
 
 explore: transactions {}
+
+explore: pdt_test {}
