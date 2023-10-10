@@ -30,9 +30,16 @@ view: transactions {
   }
   dimension: sales_qty {
     type: number
-    sql: ${TABLE}.sales_qty ;;
+    #sql: ${TABLE}.sales_qty ;;
+    sql: {%if true %} ${TABLE}.sales_qty
+            {% else %} 0
+            {% endif  %};;
   }
   measure: count {
     type: count
   }
+  measure: testing {
+    type: number
+    sql: ${sales_qty} / IFNULL(${sales_amount}, 0) ;;
+}
 }

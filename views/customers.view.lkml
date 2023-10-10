@@ -17,6 +17,10 @@ view: customers {
         sql: 2 ;;
         label: "asfdasdfasf"
       }
+      when: {
+        sql: 3 ;;
+        label: "qwerty"
+      }
     }
   }
   dimension: customer_code {

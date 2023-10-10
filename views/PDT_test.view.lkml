@@ -3,6 +3,7 @@
 
 view: pdt_test {
   derived_table: {
+    #datagroup_trigger: thelook_migueld_mtr_sales_default_datagroup
     explore_source: markets {
       column: markets_code {}
       column: markets_name {}
