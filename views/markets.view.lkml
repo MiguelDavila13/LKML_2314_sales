@@ -13,6 +13,11 @@ view: markets {
     type: string
     sql: ${TABLE}.zone ;;
   }
+
+  dimension: foo {
+    sql: "\tfoo bar" ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [markets_name]
